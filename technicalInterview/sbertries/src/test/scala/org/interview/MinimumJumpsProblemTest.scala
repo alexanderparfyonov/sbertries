@@ -1,8 +1,11 @@
 package org.interview
 
 import org.interview.MinimumJumpsProblem.minimumJumps
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
 import org.scalatest.{FunSuite, Matchers}
 
+@RunWith(classOf[JUnitRunner])
 class MinimumJumpsProblemTest extends FunSuite with Matchers {
   test("Froggest Jump") {
     assert(minimumJumps(Array(14, 4, 18, 1, 15), 3, 15, 9) == 3) // 0 -> 3 -> 6 -> 9
